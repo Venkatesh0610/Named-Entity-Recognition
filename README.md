@@ -45,14 +45,14 @@ conda create -n yourenvname python= pythonversion anaconda
 
 ex: conda create -n ner python= 3.7.4 anaconda
 
-	![image](https://user-images.githubusercontent.com/62538952/110230539-b44ff580-7f37-11eb-8593-1d46fd6d8ef3.png)
+![image](https://user-images.githubusercontent.com/62538952/110230539-b44ff580-7f37-11eb-8593-1d46fd6d8ef3.png)
 
  
 2.	Activate your environment 
 
 conda activate ner
 
-	![image](https://user-images.githubusercontent.com/62538952/110230540-b9ad4000-7f37-11eb-956a-f82fb56ad39f.png)
+![image](https://user-images.githubusercontent.com/62538952/110230540-b9ad4000-7f37-11eb-956a-f82fb56ad39f.png)
 
  
 3.	Once the environment is created you need to install all the below packaged:
