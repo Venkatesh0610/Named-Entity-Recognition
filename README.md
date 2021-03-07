@@ -7,6 +7,7 @@ Name Enity Recognition Heroku App Link: https://namedentityrecognition.herokuapp
 **Introduction:**
 Named Entity Recognition is a process where an algorithm takes a sentence or paragraph of text as input and identifies relevant nouns (people, places, and organizations) that are present in that paragraph.
  The main aim of this project is to build a web scrapper and Named Entity Recognizer. The goal of the scrapper is to create a web scraper in Python using Streamlit that will scrape Wikipedia pages and get the summary of the input text given and Named Entity Recogniser is to extract the entities(people, places, and organizations) that are present in that paragraph when paragraph(summary of the scrapper) is given as input to NER.
+ 
 **Technical Architecture:**
 
 ![image](https://user-images.githubusercontent.com/62538952/110230525-92ef0980-7f37-11eb-8d68-c91466008002.png)
