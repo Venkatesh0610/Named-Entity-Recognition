@@ -5,6 +5,7 @@ Name Enity Recognition Heroku App Link: https://namedentityrecognition.herokuapp
 
 
 **Introduction:**
+
 Named Entity Recognition is a process where an algorithm takes a sentence or paragraph of text as input and identifies relevant nouns (people, places, and organizations) that are present in that paragraph.
  The main aim of this project is to build a web scrapper and Named Entity Recognizer. The goal of the scrapper is to create a web scraper in Python using Streamlit that will scrape Wikipedia pages and get the summary of the input text given and Named Entity Recogniser is to extract the entities(people, places, and organizations) that are present in that paragraph when paragraph(summary of the scrapper) is given as input to NER.
  
@@ -14,6 +15,7 @@ Named Entity Recognition is a process where an algorithm takes a sentence or par
 
 
 **Pre requisites:**
+
 To complete this project, you must require following software’s,  concepts and packages
 
 •	Anaconda navigator:
@@ -25,52 +27,54 @@ To complete this project, you must require following software’s,  concepts and
 
 **Pythonpackages:**
 
-•	Streamlit – It is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science.
+•	Streamlit : It is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science.
 
 
-•	Displacy: If you're running a Jupyter notebook, displaCy will detect this and return the markup in a format ready to be rendered and exported. The quickest way to visualize Doc is to use displacy
+•	Displacy : If you're running a Jupyter notebook, displaCy will detect this and return the markup in a format ready to be rendered and exported. The quickest way to visualize Doc is to use displacy
 
 
-•	Spacy: spaCy is a free, open-source library for NLP in Python. It's written in Cython and is designed to build information extraction or natural language understanding systems.
+•	Spacy : spaCy is a free, open-source library for NLP in Python. It's written in Cython and is designed to build information extraction or natural language understanding systems.
 
 
 
-•	Wikipedia-API - It is easy to use the Python wrapper for Wikipedias’ API. It supports extracting texts, sections, links, categories, translations, etc from Wikipedia. Documentation provides code snippets for the most common use cases.
+•	Wikipedia-API : It is easy to use the Python wrapper for Wikipedias’ API. It supports extracting texts, sections, links, categories, translations, etc from Wikipedia. Documentation provides code snippets for the most common use cases.
 
 
 **Required installation:**
+
 **Steps:**
+
 1.	create a anaconda environment using the command  
 
-conda create -n yourenvname python= pythonversion anaconda
+        conda create -n yourenvname python= pythonversion anaconda
 
-ex: conda create -n ner python= 3.7.4 anaconda
+        example: conda create -n ner python= 3.7.4 anaconda
 
 ![image](https://user-images.githubusercontent.com/62538952/110230539-b44ff580-7f37-11eb-8593-1d46fd6d8ef3.png)
 
  
 2.	Activate your environment 
 
-conda activate ner
+       conda activate ner
 
 ![image](https://user-images.githubusercontent.com/62538952/110230540-b9ad4000-7f37-11eb-956a-f82fb56ad39f.png)
 
  
 3.	Once the environment is created you need to install all the below packaged:
 	
-a.	pip install wikipedia
+        a.	pip install wikipedia
 
-b.	pip install streamlit
+        b.	pip install streamlit
 
-c.	conda install -c conda-forge spacy
+        c.	conda install -c conda-forge spacy
 
-d.	python -m spacy download en_core_web_sm
+        d.	python -m spacy download en_core_web_sm
 
 			(or)
 			
 1.	Follow the same steps till 2 after that run the below command:
 
-	pip install -r requirements.txt 
+	        pip install -r requirements.txt 
 
 **Project Flow:**
 
@@ -83,17 +87,17 @@ d.	python -m spacy download en_core_web_sm
 
 To accomplish this, we have to complete all the activities and tasks listed below
 
-•	Named Entity Recognition
+• Named Entity Recognition
 
-•	Import the necessary Libraries
+       •	Import the necessary Libraries
 
-•	Loading the wrapper
+       •	Loading the wrapper
 
-•	Creation of Scrapping and NER
+       •	Creation of Scrapping and NER
 
-•	Running the model
-
-•	Deploying the application on Heroku Platform
+       •	Running the model
+ 
+• Deploying the application on Heroku Platform
 
 
 **Project Structure:**
@@ -154,13 +158,14 @@ After we found the summary of our input then we will be performing NER by checki
 
 
 
-**Activity 4: **
+**Activity 4:**
 
 
 Running the application :
+
 Finally it's time to run the application in your local system which we build using streamlit. For running your application you need to open your anaconda prompt and set the path where your files are present then we need to activate our environment which we discussed earlier and finally run the command
 
-streamlit run app.py
+         streamlit run app.py
 
 ![image](https://user-images.githubusercontent.com/62538952/110230568-e9f4de80-7f37-11eb-936a-265c7751da1c.png)
 
@@ -171,13 +176,19 @@ streamlit run app.py
 
 As we run our streamlit app in our local system now its time to deploy our application in heroku which is a platform as a service (PaaS) allowing you to run applications written in multiple different programming languages – including Python and Ruby – on the cloud.
 Below are some required files which we have to create before the deploying our model in heroku.
-Requirements.txt
+
+**Requirements.txt**
+
 Firstle we’ll be generating a requirement.txt file that will auto-generate a requirements file based on your codebase. To make this super simple we’ll use pipreqs. To start, let’s install it
+
 pip install pipreqs
+
 then,
+
 pipreqss
 
-setup.sh and Procfile
+**setup.sh and Procfile**
+
 setup.sh file
 
 ![image](https://user-images.githubusercontent.com/62538952/110230572-f5480a00-7f37-11eb-8777-f686b8a6df79.png)
@@ -190,33 +201,34 @@ For more information on what the Procfile is and the process types/commands, you
 
 
 After all the files are ready now you need to follow the following steps:
-Login to the heroku platform 
-Click on New then Create new app
+
+   i) Login to the heroku platform 
+   ii)Click on New then Create new app
 
 ![image](https://user-images.githubusercontent.com/62538952/110230583-055fe980-7f38-11eb-8761-b1d3ad8bc827.png)
 
  
-Provide the name of the app and click on Create app
+  iii)Provide the name of the app and click on Create app
 
 
 ![image](https://user-images.githubusercontent.com/62538952/110230603-232d4e80-7f38-11eb-8fc1-19094afb7d96.png)
 
                
- Click on Github icon and then add you repository name correctly and click on connect.
+   iv)Click on Github icon and then add you repository name correctly and click on connect.
  
  ![image](https://user-images.githubusercontent.com/62538952/110230610-2cb6b680-7f38-11eb-9396-6c511e9ce718.png)
 
  
- And finally go down and click on the Deploy it will take some time and after the           
+    v)And finally go down and click on the Deploy it will take some time and after the           
  deployment is done and you will get your deployed link.
  
  ![image](https://user-images.githubusercontent.com/62538952/110230615-34765b00-7f38-11eb-82fb-86df64da2703.png)
 
  
  
-Final Output:
+**Final Output:**
 
 URL: https://namedentityrecognition.herokuapp.com/
 
-Output Video:
+**Output Video:**
 https://drive.google.com/file/d/1JVjT73CoJAcvjXmq3UCncdhqV81DBMoY/view?usp=sharing
