@@ -14,9 +14,13 @@ Named Entity Recognition is a process where an algorithm takes a sentence or par
 
 **Pre requisites:**
 To complete this project, you must require following software’s,  concepts and packages
+
 •	Anaconda navigator:
+
 •	Refer to the link below to download anaconda navigator
+
 •	Installation video
+
 
 **Pythonpackages:**
 
@@ -36,25 +40,36 @@ To complete this project, you must require following software’s,  concepts and
 **Required installation:**
 **Steps:**
 1.	create a anaconda environment using the command  
+
 conda create -n yourenvname python= pythonversion anaconda
+
 ex: conda create -n ner python= 3.7.4 anaconda
+
 	![image](https://user-images.githubusercontent.com/62538952/110230539-b44ff580-7f37-11eb-8593-1d46fd6d8ef3.png)
 
  
 2.	Activate your environment 
+
 conda activate ner
 
 	![image](https://user-images.githubusercontent.com/62538952/110230540-b9ad4000-7f37-11eb-956a-f82fb56ad39f.png)
 
  
 3.	Once the environment is created you need to install all the below packaged:
+	
 a.	pip install wikipedia
+
 b.	pip install streamlit
+
 c.	conda install -c conda-forge spacy
+
 d.	python -m spacy download en_core_web_sm
+
 			(or)
+			
 1.	Follow the same steps till 2 after that run the below command:
-pip install -r requirements.txt 
+
+	pip install -r requirements.txt 
 
 **Project Flow:**
 
