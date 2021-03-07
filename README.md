@@ -58,16 +58,27 @@ pip install -r requirements.txt
 
 **Project Flow:**
 
+
 •	User interacts with the UI (User Interface)  to give the input
+
 •	Depending on the  input our Wikipedia scraper will scrape Wikipedia pages and get the summary of the input text given.
+
 •	Finally the scrapped output will be fed as input to our NER model and it will extract the entities such as people, organisation etc., present in the the scrapped input.
+
 To accomplish this, we have to complete all the activities and tasks listed below
+
 •	Named Entity Recognition
+
 •	Import the necessary Libraries
+
 •	Loading the wrapper
+
 •	Creation of Scrapping and NER
+
 •	Running the model
+
 •	Deploying the application on Heroku Platform
+
 
 **Project Structure:**
 
@@ -77,9 +88,13 @@ To accomplish this, we have to complete all the activities and tasks listed belo
 Create a Project folder which contains files as shown below
  
 •	app.py : is our main file where all the important codes related to our projects are present.
+
 •	Procfile : A Procfile is a mechanism for declaring what commands are run by your application's containers on the Deis platform. It follows the process model.
+
 •	requirements.txt : This file will contain all the packages  which are used for our project.
+
 •	setup.sh : this file will be used for implementing our streamlite app with the heroku platform.
+
 
 
 **Named Entity Recognition**
@@ -89,6 +104,8 @@ Named entity recognition (NER) helps you easily identify the key elements in a t
 
 
 **Activity 1 :**
+
+
 Importing the Libraries: For Implementing our project the first and foremost step is to Importing the necessary libraries
 
 ![image](https://user-images.githubusercontent.com/62538952/110230547-cd58a680-7f37-11eb-9053-11ae8fd7bea2.png)
@@ -97,6 +114,8 @@ Importing the Libraries: For Implementing our project the first and foremost ste
  after implementing all the libraries now it's time to start with our project coding.
 
 **Activity 2:**
+
+
 Loading the wrapper:As we will be giving the text as an input to our model so for understanding that we will use a wrapper that reads the pipeline's config. cfg , uses the language and pipeline information to construct a Language object, loads in the model data and weights, and returns it.
 Along with the tokenization we are providing the input field for our scrapper.
  
@@ -105,6 +124,8 @@ Along with the tokenization we are providing the input field for our scrapper.
 
 
 **Activity 3:** 
+
+
 Creation of Scrapping and NER: After all the importing along with the text as input are done now it’s time to create our main function which will contain both Wikipedia and NER operations.
 
 Firstly we will be creating a select box by using which we will able select the two operations and then we are creating two choices one for scrapper and NER functions.
@@ -119,6 +140,7 @@ After we found the summary of our input then we will be performing NER by checki
 
 **Activity 4: **
 
+
 Running the application :
 Finally it's time to run the application in your local system which we build using streamlit. For running your application you need to open your anaconda prompt and set the path where your files are present then we need to activate our environment which we discussed earlier and finally run the command
 
@@ -129,6 +151,8 @@ streamlit run app.py
  
 
 **Deploying the application on Heroku**
+
+
 As we run our streamlit app in our local system now its time to deploy our application in heroku which is a platform as a service (PaaS) allowing you to run applications written in multiple different programming languages – including Python and Ruby – on the cloud.
 Below are some required files which we have to create before the deploying our model in heroku.
 Requirements.txt
