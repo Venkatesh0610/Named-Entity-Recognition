@@ -178,5 +178,5 @@ Final Output:
 
 URL: https://namedentityrecognition.herokuapp.com/
 
-Output Video
-
+Output Video:
+https://drive.google.com/file/d/1JVjT73CoJAcvjXmq3UCncdhqV81DBMoY/view?usp=sharing
